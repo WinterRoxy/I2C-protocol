@@ -35,7 +35,7 @@ module tb_i2c_combined;
     reg [7:0] slave_data;
     reg       slave_sda;  
 
-    always @(posedge SCL) begin
+    always @(negedge SCL) begin
         if (reset) begin
             slave_bit_cnt <= 7;
             slave_sda <= 1;
