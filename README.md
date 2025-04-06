@@ -13,7 +13,7 @@ The `I2C_controller` module implements a combined I²C master that supports both
   - **Read Mode (r_w = 1):**  
     The module sends a start condition, transmits a 7-bit address with the read bit appended, waits for a slave ACK, and then releases SDA to sample 8 data bits from the slave. After reading the byte, the module drives a NACK to indicate that no further data will be read.
     
-   <img width="812" alt="Image" src="https://github.com/user-attachments/assets/3e612af0-6d24-4590-8789-3af355b9124f" />
+     <img width="1012" alt="Image" src="https://github.com/user-attachments/assets/3e612af0-6d24-4590-8789-3af355b9124f" />
 - **Open-Drain SDA Operation:**  
   SDA is implemented as a bidirectional open-drain bus controlled by an output enable (`sda_oe`) and an output value (`sda_out`). When `sda_oe` is low, the line is high impedance.
 
